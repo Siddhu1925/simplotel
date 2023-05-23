@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'popons', sans-serif;
+    background-color: rgb(27,27,27);
+    overflow-x: hidden;
+
+}
+
+.header{
+    height: 123vh;
+    position: relative;
+    background-image: url("./img1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 700px;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 94px; /* Adjust the height as needed */
+    /* background-color: pink; */
+    z-index: 1;
+    background-image: linear-gradient(110deg, hotpink, sandybrown, gold);
+  }
+
+.navbar{
+    height: 137px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    /* padding-bottom: 5px; */
+    padding-top: 2px;
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.heading-tertiary{
+    font-size: 3.5rem;
+}
+
+.navbar-list{
+    /* list-style: none;
+    font-size: 15px;
+    padding-left: 172px; */
+    font-family: " Arial, sans-serif";
+    padding-left: 172px;
+    font-size: 20px;
+    /* display: flex; */
+    /* font-weight: bold; */
+}
+
+.navbar-item{
+    display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    padding: 3rem;
+    transition: all .2s ease;
+    color: black;
+}
+
+.navbar-link:hover{
+    background-image:linear-gradient(45deg, hotpink, sandybrown, gold) ;
+    color: white;
+}
+
+
+
+
+
+/* .toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+} */
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* text-transform: uppercase; */
+    color: white;
+    text-align: left;
+}
+
+.lead{
+    letter-spacing: 2px;
+    margin-left: -59rem;
+        display: inline-block; /* Keeps the container size to fit the image */
+        padding-left: 20px;
+        padding-right: 80px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        background-color: rgba(239, 22, 37, 0.323);
+        margin-bottom: 30rem;
+
+}
+
+.lead strong {
+    font-weight: bold;
+  }
+
+  .lead .larger-text {
+    font-size: 32px; /* Adjust the value to your desired font size */
+  }
+
+.order-now:visited,
+.order-now:link{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border: 1px solid white;
+
+    border-radius: 100px;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 1rem rgba(240,107,55, .1);
+    text-shadow: 0 1rem 1rem rgba(0,0,0,.6);
+    width: 150px;
+
+}
+
+.order-now:hover{
+    background-color:greenyellow;
+    border: 1px solid white;
+    box-shadow: 0 0 2rem rgba(240,107,55, .8);
+}
+
+/* MENU */
+
+.menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(110deg, hotpink, sandybrown, gold);
+}
+
+.menu-heading{
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.9);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.1rem;
+
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 2rem;
+    padding-top: 4rem;
+    padding-left: 110px;
+  }
+  
+
+.heading-secondary{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.menu-img1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./img4.jpg");
+    border-radius:  0 60px 0 0;
+    padding: 100px;
+}
+.menu-img2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./img2.jpg");
+    border-radius:  0 60px 0 0;
+    padding: 100px;
+}
+.menu-img3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./img3.jpg");
+    border-radius:  0 60px 0 0;
+    padding: 100px;
+}
+
+.menu-hold{
+    padding: 20px;
+}
+.menu-container{
+    width: 25rem;
+    height: 35rem;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+    border-radius: 0 60px 0 60px; /* Adjust the values to your desired radius */
+      background-color: #f0f0f0; /* Replace with your desired background color */
+      padding: 20px;
+      
+}
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+.menu-p{
+    font-size: 1.4rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menu-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 25px;
+}
+.order-button {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .navbar-list {
+      padding-left: 0; /* Adjust the value to your desired padding */
+    }
+  
+    .navbar-link:visited,
+    .navbar-link:link {
+      padding: 2rem; /* Adjust the value to your desired padding */
+    }
+  
+    .header-box {
+      text-align: center;
+    }
+  
+    .lead {
+      margin-left: 0;
+      text-align: center;
+      padding: 20px; /* Adjust the value to your desired padding */
+    }
+  }
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    .navbar-list {
+      padding-left: 0; /* Adjust the value to your desired padding */
+    }
+  
+    .navbar-link:visited,
+    .navbar-link:link {
+      padding: 2rem; /* Adjust the value to your desired padding */
+    }
+    .menu-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
